@@ -47,12 +47,12 @@ const App: React.FC = () => {
 
   const handleCTAClick = () => {
     // Track conversion
-    if (typeof window.fbq !== 'undefined') {
-      window.fbq('track', 'InitiateCheckout');
+    if (typeof (window as any).fbq !== 'undefined') {
+      (window as any).fbq('track', 'InitiateCheckout');
     }
     
     // Redirect to checkout
-    window.open('https://pay.kiwify.com.br/your-checkout-link', '_blank');
+    window.open('https://pay.kiwify.com.br/VqQNvAj', '_blank');
   };
 
   const benefits = [
